@@ -1,0 +1,22 @@
+src/build/landmines.py --landmine-scripts src/tools_webrtc/get_landmines.py --src-dir src from /mnt/data01/webrtc-checkout
+src/third_party/depot_tools/update_depot_tools_toggle.py --disable from /mnt/data01/webrtc-checkout
+src/build/linux/sysroot_scripts/install-sysroot.py --arch=i386 from /mnt/data01/webrtc-checkout
+src/build/linux/sysroot_scripts/install-sysroot.py --arch=amd64 from /mnt/data01/webrtc-checkout
+src/tools/clang/scripts/update.py from /mnt/data01/webrtc-checkout
+src/build/util/lastchange.py -o src/build/util/LASTCHANGE from /mnt/data01/webrtc-checkout
+src/third_party/depot_tools/download_from_google_storage.py --no_resume --no_auth --bucket chromium-instrumented-libraries -s src/third_party/instrumented_libraries/binaries/msan-chained-origins-trusty.tgz.sha1 from /mnt/data01/webrtc-checkout
+-vpython-spec /mnt/data01/webrtc-checkout/src/third_party/depot_tools/gsutil.vpython -- /mnt/data01/webrtc-checkout/src/third_party/depot_tools/external_bin/gsutil/gsutil_4.28/gsutil/gsutil -o GSUtil:software_update_check_period=0 ls gs://chromium-instrumented-libraries/8abb372b429d35e6b6105468f9d2e4211f4d4fb9 from /mnt/data01/webrtc-checkout
+-vpython-spec /mnt/data01/webrtc-checkout/src/third_party/depot_tools/gsutil.vpython -- /mnt/data01/webrtc-checkout/src/third_party/depot_tools/external_bin/gsutil/gsutil_4.28/gsutil/gsutil -o GSUtil:software_update_check_period=0 cp gs://chromium-instrumented-libraries/8abb372b429d35e6b6105468f9d2e4211f4d4fb9 src/third_party/instrumented_libraries/binaries/msan-chained-origins-trusty.tgz from /mnt/data01/webrtc-checkout
+-vpython-spec /mnt/data01/webrtc-checkout/src/third_party/depot_tools/gsutil.vpython -- /mnt/data01/webrtc-checkout/src/third_party/depot_tools/external_bin/gsutil/gsutil_4.28/gsutil/gsutil -o GSUtil:software_update_check_period=0 stat gs://chromium-instrumented-libraries/8abb372b429d35e6b6105468f9d2e4211f4d4fb9 from /mnt/data01/webrtc-checkout
+src/third_party/depot_tools/download_from_google_storage.py --no_resume --no_auth --bucket chromium-instrumented-libraries -s src/third_party/instrumented_libraries/binaries/msan-no-origins-trusty.tgz.sha1 from /mnt/data01/webrtc-checkout
+-vpython-spec /mnt/data01/webrtc-checkout/src/third_party/depot_tools/gsutil.vpython -- /mnt/data01/webrtc-checkout/src/third_party/depot_tools/external_bin/gsutil/gsutil_4.28/gsutil/gsutil -o GSUtil:software_update_check_period=0 ls gs://chromium-instrumented-libraries/001468c47678d9f85c3e1ea82655339d4f57dd18 from /mnt/data01/webrtc-checkout
+-vpython-spec /mnt/data01/webrtc-checkout/src/third_party/depot_tools/gsutil.vpython -- /mnt/data01/webrtc-checkout/src/third_party/depot_tools/external_bin/gsutil/gsutil_4.28/gsutil/gsutil -o GSUtil:software_update_check_period=0 cp gs://chromium-instrumented-libraries/001468c47678d9f85c3e1ea82655339d4f57dd18 src/third_party/instrumented_libraries/binaries/msan-no-origins-trusty.tgz from /mnt/data01/webrtc-checkout
+-vpython-spec /mnt/data01/webrtc-checkout/src/third_party/depot_tools/gsutil.vpython -- /mnt/data01/webrtc-checkout/src/third_party/depot_tools/external_bin/gsutil/gsutil_4.28/gsutil/gsutil -o GSUtil:software_update_check_period=0 stat gs://chromium-instrumented-libraries/001468c47678d9f85c3e1ea82655339d4f57dd18 from /mnt/data01/webrtc-checkout
+src/build/landmines.py --landmine-scripts src/tools_webrtc/get_landmines.py --src-dir src from /mnt/data01/webrtc-checkout
+src/third_party/depot_tools/update_depot_tools_toggle.py --disable from /mnt/data01/webrtc-checkout
+src/build/linux/sysroot_scripts/install-sysroot.py --arch=i386 from /mnt/data01/webrtc-checkout
+src/build/linux/sysroot_scripts/install-sysroot.py --arch=amd64 from /mnt/data01/webrtc-checkout
+src/tools/clang/scripts/update.py from /mnt/data01/webrtc-checkout
+src/build/util/lastchange.py -o src/build/util/LASTCHANGE from /mnt/data01/webrtc-checkout
+src/third_party/depot_tools/download_from_google_storage.py --no_resume --no_auth --bucket chromium-instrumented-libraries -s src/third_party/instrumented_libraries/binaries/msan-chained-origins-trusty.tgz.sha1 from /mnt/data01/webrtc-checkout
+src/third_party/depot_tools/download_from_google_storage.py --no_resume --no_auth --bucket chromium-instrumented-libraries -s src/third_party/instrumented_libraries/binaries/msan-no-origins-trusty.tgz.sha1 from /mnt/data01/webrtc-checkout
